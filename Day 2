@@ -13,22 +13,30 @@ import java.util.concurrent.*;
 import java.util.regex.*;
 public class Day2 {
 
-    public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        int tip_percent,tax_percent,total_cost;
-        double meal_cost,total_meal_percent=0.0;
+  // Complete the solve function below.
+  static void solve(double meal_cost, int tip_percent, int tax_percent){
+      int totalCost = 0;
+      double tip , tax;
+      tip = meal_cost * tip_percent / 100;
+      tax = meal_cost * tax_percent / 100;
+      totalCost = (int)(meal_cost + tip +tax);
+      System.out.println("The total meal cost is "+totalCost+" dollars.");
+      }
 
-        meal_cost = scan.nextDouble();
-        tip_percent = scan.nextInt();
-        tax_percent = scan.nextInt();
+  private static final Scanner scanner = new Scanner(System.in);
 
-        total_meal_percent = meal_cost;
-        total_meal_percent = meal_cost*tip_percent/100;
-        total_meal_percent = meal_cost*tax_percent/100;
+  public static void main(String[] args) {
+      double meal_cost = scanner.nextDouble();
+      scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
 
-        total_cost=(int)Math.round(total_meal_percent);
-        System.out.println("The total meal cost is "+total_cost+" dollars.");
+      int tip_percent = scanner.nextInt();
+      scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
 
-        scan.close();
-    }
+      int tax_percent = scanner.nextInt();
+      scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
+
+      solve(meal_cost, tip_percent, tax_percent);
+
+      scanner.close();
+  }
 }
