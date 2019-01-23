@@ -1,0 +1,26 @@
+package day0;
+
+/**
+ *
+ * @author 1413101039
+ */
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+public class Day0 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner scan = new Scanner (System.in);
+        String inputString = scan.nextLine();
+        System.out.println("Hello, World.");
+        System.out.println(inputString);
+
+    }
+
+}
