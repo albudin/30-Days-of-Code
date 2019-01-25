@@ -25,7 +25,8 @@ cetak `10` baris keluaran; setiap baris `i (dimana 1 ≤ i ≤ 10  )` berisi dar
 2 x 7 = 14
 2 x 8 = 16
 2 x 9 = 18
-2 x 10 = 20```
+2 x 10 = 20
+```
 #### source code
 ```
 import java.io.*;
