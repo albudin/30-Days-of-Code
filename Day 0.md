@@ -1,3 +1,22 @@
+## Laporan 30 Days of Code
+
+### Day 0 : 
+#### Tujuan
+Dalam tantangan ini diajarkan tentang
+#### Tugas
+blablabla....
+#### Format masuk
+blablabla....
+#### Kendala
+blablaba...
+#### Format keluar
+blablaba...
+#### Contoh input
+blablabla...
+#### Contoh keluar
+blablaba...
+#### Souce Code
+```
 package day0;
 
 /**
