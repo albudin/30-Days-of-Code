@@ -1,6 +1,7 @@
 ## Laporan 30 Days of Code
 ---
 ### Day 5 : Loops
+apa ya
 #### Tujuan
 menggunakan loop untuk membantu menyelesaiakan matematika sederhana.
 #### Tugas
