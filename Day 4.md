@@ -1,5 +1,5 @@
 ## Laporan 30 Days of Code
-
+---
 ### Day 4 : Class vs. Instance
 #### Tujuan
 Dalam tantangan ini diajarkan tentang perbedaan class dan Instance; karena ini adalah konsep OOP, itu hanya digunakan dalam bahasa tertentu.

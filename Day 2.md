@@ -1,6 +1,6 @@
 ## Laporan 30 Days of Code
-
-### Day 2 : 
+---
+### Day 2 : Operators
 #### Tujuan
 Dalam tantangan ini diajarkan tentang
 #### Tugas

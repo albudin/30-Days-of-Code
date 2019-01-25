@@ -1,6 +1,6 @@
 ## Laporan 30 Days of Code
-
-### Day 1 :  
+---
+### Day 1 : Data Types
 #### Tujuan
 Dalam tantangan ini diajarkan tentang
 #### Tugas

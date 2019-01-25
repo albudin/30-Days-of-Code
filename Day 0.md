@@ -1,28 +1,25 @@
 ## Laporan 30 Days of Code
-
-### Day 0 : 
+---
+### Day 0 : Hello, World
 #### Tujuan
-Dalam tantangan ini diajarkan tentang
+Dalam tantangan meninjau beberapa konsep dasar yang akan membantu memulai seri ini. gunakan sintaks yang sama (atau serupa) untuk membaca input dan menulis output dalam tantangan di seluruh HackerRank.
 #### Tugas
-blablabla....
+Untuk menyelesaikan tantangan ini, harus menyimpan jalur input dari stdin ke variabel, cetak Hello, World. pada satu baris, dan akhirnya cetak nilai variabel Anda pada baris kedua.
+
+`Catatan:` Instruksi ini berbasis Java, tetapi mendukung pengiriman dalam banyak bahasa populer. Anda dapat beralih bahasa menggunakan menu tarik-turun di atas editor, dan variabel dapat ditulis secara berbeda tergantung pada praktik terbaik dari bahasa kiriman Anda.
 #### Format masuk
-blablabla....
-#### Kendala
-blablaba...
+satu baris teks yang menunjukkan `inputString` (variabel yang isinya harus dicetak).
 #### Format keluar
-blablaba...
+cetak Hello, World. pada baris pertama dan isi dari `inputString` pada baris kedua
 #### Contoh input
-blablabla...
+`Welcome to 30 Days of Code!`
 #### Contoh keluar
-blablaba...
+```
+Hello, World.
+Welcome to 30 Days of Code!
+```
 #### Souce Code
 ```
-package day0;
-
-/**
- *
- * @author 1413101039
- */
 import java.io.*;
 import java.util.*;
 import java.text.*;
@@ -43,3 +40,4 @@ public class Day0 {
     }
 
 }
+```
