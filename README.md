@@ -32,6 +32,7 @@ Tebal miring 	***tebal miring***
 - [ ] Belajar Git di Petanikode
 - [ ] Belajar Bahasa pemrograman Rust
 - [x] Membuat template blog dengan bootstrap
+
 ## Buat List
 * Milk
 * Bread
