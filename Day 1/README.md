@@ -2,35 +2,40 @@
 ---
 ### Day 1 : Data Types
 #### Tujuan
-Dalam tantangan ini diajarkan tentang
+pembahasan tentang tipe data
 #### Tugas
-blablabla....
+Lengkapi kode di editor di bawah ini. Variabel i,d, dan s sudah dinyatakan dan diinisialisasi. Kamu harus:
+1. Menyatakan 3 variabel: satu tipe int, satu double, dan satu tipe String.
+2. Baca baca 3 baris input dari stdin (sesuai dengan urutan yang diberikan di bagian Format Input di bawah) dan inisialisasi Anda
+variabel.
+3. Menggunakan + operator untuk melakukan operasi berikut:
+  1. Cetak jumlah i ditambah variabel int Anda di baris baru.
+  2. Cetak jumlah d ditambah variabel ganda Anda ke skala satu tempat desimal pada baris baru.
+  3. Menggabungkan s dengan string yang Anda baca sebagai input dan cetak hasilnya pada baris baru.
 #### Format masuk
-blablabla....
-#### Kendala
-blablaba...
+Baris pertama berisi bilangan bulat yang harus dijumlahkan dengan i.
+Baris kedua berisi double yang harus dijumlahkan dengan d.
+Baris ketiga berisi string yang harus Anda gabungkan dengan s.
 #### Format keluar
-blablaba...
+Cetak jumlah dari kedua bilangan bulat pada baris pertama, jumlah dari kedua dobel (diskalakan 1 ke tempat desimal) pada baris kedua, dan kemudian dua string bersambung pada baris ketiga.
 #### Contoh input
-blablabla...
+```
+12
+4.0
+is the best place to learn and practice coding!
+```
 #### Contoh keluar
-blablaba...
+```
+16
+8.0
+HackerRank is the best place to learn and practice coding!
+```
+#### Penjelasan
+Ketika kita menjumlahkan bilangan bulat 4 dan 12, kita mendapatkan bilangan bulat 16.
+Ketika kita menjumlahkan angka floating-point 4.0 dan 4.0, kita dapatkan 8.0.
+Ketika kami menggabungkan HackerRank dengan adalah tempat terbaik untuk belajar dan berlatih coding !, kami mendapatkan HackerRank adalah tempat terbaik untuk belajar dan berlatih coding!.
 #### Souce Code
 ```
-package DaysCode30;
-
-/**
- *
- * @author 1413101039
- */
-import java.io.*;
-import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
-public class Day1 {
-
-
     public static void main(String[] args) {
         int i = 4;
         double d = 4.0;

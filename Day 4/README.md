@@ -14,7 +14,7 @@ baris pertama berisi bilangan bulat, `T`(jumlah kasus uji), dan `T` baris beriku
 -5 ≤ age ≤ 30
 ```
 #### Format keluar
-blablaba...
+Lengkapi definisi metode yang disediakan di editor sehingga memenuhi spesifikasi yang diuraikan di atas; kode untuk menguji pekerjaan Anda sudah ada di editor. Jika metode Anda diterapkan dengan benar, setiap test case akan dicetak 2 atau 3 baris (tergantung pada apakah valid diteruskan ke konstruktor) atau tidak.#### Contoh input
 #### Contoh input
 ```
 4
@@ -23,7 +23,6 @@ blablaba...
 16
 18
 ```
-
 #### Contoh keluar
 ```
 Age is not valid, setting age to 0.
@@ -39,6 +38,10 @@ You are old.
 You are old.
 You are old.
 ```
+#### Penjelasan
+uji kasus 0: initialAge = -1
+karena initialAge < 0, code diatur batas 0 dan cetak "Age is not valid..."
+dan selanjutnya...
 #### Souce Code
 ```
 public class Person {

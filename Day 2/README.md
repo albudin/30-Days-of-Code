@@ -2,36 +2,36 @@
 ---
 ### Day 2 : Operators
 #### Tujuan
-Dalam tantangan ini diajarkan tentang
+Belajar tentang operasi aritmatik
 #### Tugas
-blablabla....
+Mengingat harga makanan (biaya pokok makanan), tip persen (persentase harga makanan ditambahkan sebagai tip), dan persen pajak (persentase harga makanan ditambahkan sebagai pajak) untuk makanan, menemukan dan mencetak total biaya makan.
+Catatan: Pastikan untuk menggunakan nilai yang tepat untuk perhitungan Anda, atau Anda mungkin berakhir dengan hasil yang salah!
 #### Format masuk
-blablabla....
-#### Kendala
-blablaba...
+Ada 3 garis input numerik:
+Baris pertama memiliki dobel, mealCost (biaya makan sebelum pajak dan tip).
+Baris kedua memiliki bilangan bulat, tipPercent(persentase mealCost ditambahkan sebagai tip).
+Baris ketiga memiliki bilangan bulat, taxPercent(persentase mealCost ditambahkan sebagai pajak).
 #### Format keluar
-blablaba...
+Cetak total biaya makan, di mana totalCost adalah hasil bulat dari seluruh tagihan (mealCost dengan tambahan pajak dan tip).
 #### Contoh input
-blablabla...
+```
+12.00
+20
+8
+```
 #### Contoh keluar
-blablaba...
+`15`
+#### Penjelasan
+diberikan:
+mealCost = 12, tipPercent = 20, taxPercent = 8
+kalkulasi:
+tip = 12 X 20/100 = 2.4
+tax = 12 X 8/100 = 0.96
+totalCost = mealCost + tip + tax = 12 + 2.4 + 0.96 = 15.36
+round(totalCost) = 15
 #### Souce Code
 ```
-package DaysCode30;
-
-/**
- *
- * @author 1413101039
- */
-import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
-import java.util.*;
-import java.util.concurrent.*;
-import java.util.regex.*;
 public class Day2 {
-
   // Complete the solve function below.
   static void solve(double meal_cost, int tip_percent, int tax_percent){
       int totalCost = 0;

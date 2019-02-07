@@ -2,29 +2,35 @@
 ---
 ### Day 3 : Intro to Conditional Statements
 #### Tujuan
-Dalam tantangan ini diajarkan tentang
+belajar tentang conditional Statements
 #### Tugas
-blablabla....
+diberikan bilangan bulat n dengan kondisi:
+* jika n adalah ganjil, cetak Weired
+* jika n adalah genap dan dalam rentang inklusif 2 sampai 5, cetak Not Weired
+* jika n adalah genap dan dalam rentang inklusif 6 sampai 20, cetak Weired
+* jika n adalah genap dan lebih dari 20, cetak Not Weired
+selainnya cetak Weired
 #### Format masuk
-blablabla....
+satu baris yang mengandung bilangan bulat positif n
 #### Kendala
-blablaba...
+`1 ≤ n ≤ 100`
 #### Format keluar
-blablaba...
-#### Contoh input
-blablabla...
-#### Contoh keluar
-blablaba...
+cetak Weired jika nomor Weired; selainnya cetak Not Weired
+#### Contoh input 0
+`3`
+#### Contoh keluar 0
+`Weired`
+#### Contoh input 1
+`24`
+#### Contoh keluar 1
+`Not Weired`
+#### Penjelasan
+contoh kasus 0: n = 3
+n ganjil dan ganjil adalah Weired, jadi cetak Weired
+contoh kasus 1: n = 24
+n > 20 dan n adalah genap, jadi bukan Weired. maka cetak Not Weired
 #### Souce Code
 ```
-import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
-import java.util.*;
-import java.util.concurrent.*;
-import java.util.regex.*;
-
 public class Solution {
 
     //private static final Scanner scanner = new Scanner(System.in);
