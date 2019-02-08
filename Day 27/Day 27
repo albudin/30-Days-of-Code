@@ -1,0 +1,122 @@
+import java.util.*;
+
+public class Solution {
+
+    public static int minimum_index(int[] seq) {
+        if (seq.length == 0) {
+            throw new IllegalArgumentException("Cannot get the minimum value index from an empty sequence");
+        }
+        int min_idx = 0;
+        for (int i = 1; i < seq.length; ++i) {
+            if (seq[i] < seq[min_idx]) {
+                min_idx = i;
+            }
+        }
+        return min_idx;
+    }
+
+    static class TestDataEmptyArray {
+        // membuat array kosong
+        public static int[] get_array(){
+            int[] a=new int [0];
+            return a;
+        }
+    }
+
+    static class TestDataUniqueValues {
+        public static int[] get_array(){
+            int [] array = arrayWithNum();
+            //check jika element unik
+            for (int i=0;i<array.length;i++){
+                for(int j=i+1;j<array.length;j++){
+                    if(array[i]==array[j]){get_array();}
+                }
+            }
+            return array;
+        }
+
+        //buat array dengan nomor acak
+        public static int[] arrayWithNum(){
+                int[] array=new int [3];
+                for(int i=0;i<array.length;i++){
+                    array[i]=random();
+                }
+                //sort array untuk proper jawaban
+                Arrays.sort(array);
+                return array;
+            }
+
+            //random numbers
+            public static int random(){
+                int random =(int)(Math.random()*100)+1;
+                return random;
+            }
+
+            public static int get_expected_result(){
+                int[] array = get_array();
+                int minValue = minNumber(array);
+                return minValue;
+
+            }
+
+            public static int minNumber(int[] array){
+                //untuk mendapatkan minimum index dalam array
+                int min_idx=0;
+                for(int i=1;i<array.length;i++){
+                    if(array[i]<array[min_idx]){
+                        min_idx=i;
+                    }
+                }
+                return min_idx;
+            }
+        }
+
+        static class TestDataExactlyTwoDifferentMinimums{
+            //bla..
+            private TestDataUniqueValues testDataUniqueValues;
+            public TestDataExactlyTwoDifferentMinimums(TestDataUniqueValues testDataUniqueValues){
+                this.testDataUniqueValues=testDataUniqueValues;
+            }
+            public static int[] get_array(){
+                int[] array=arrayWithNum();
+                //check jika element sama
+                for(int i=0;i<array.length;i++){
+                    for(int j = i+1;j<array.length;j++){
+                        if(!(array[i]==array[j])){get_array();}
+                    }
+                }
+                return array;
+            }
+
+
+            //create an array with
+            public static int[] arrayWithNum(){
+                int[] array =new int[]{1,1};
+                return array;
+            }
+
+            //random numbers
+            public static int random(){
+                int num=TestDataUniqueValues.get_expected_result();
+                return num;
+            }
+
+            public static int get_expected_result(){
+                int[] array=get_array();
+                int minValue=minNumber(array);
+                return minValue;
+            }
+
+            public static int minNumber(int[] array){
+                //kode ini akan menemukan min index objek
+                int min_idx=0;
+                for(int i=1;i<array.length;i++){
+                    if(array[i]<array[min_idx]){
+                    min_idx=i;
+                    }
+                }
+                return min_idx;
+            }
+        }
+
+    
