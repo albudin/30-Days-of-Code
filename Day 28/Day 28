@@ -1,0 +1,35 @@
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int N = sc.nextInt();
+        String str=".@gmail\\.com$";//give pattern
+        Pattern ptrn=Pattern.compile(str);//will compile pattern
+
+        List<String> lst=new ArrayList();
+
+        for (int a0 = 0; a0 < N; a0++) {
+            String firstName = sc.next();
+
+            String emailID = sc.next();
+            Matcher matcher=ptrn.matcher(emailID);
+
+            if(matcher.find()){
+                //System.out.println(firstName);
+                lst.add(firstName);
+            }
+        }
+        Collections.sort(lst);//Sort all name
+        for(String name:lst){
+            System.out.println(name);
+        }
+    }
+}
