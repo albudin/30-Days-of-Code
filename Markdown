@@ -1,30 +1,73 @@
 # Tutorial Markdown
 
-## Disini definisikan Markdown
-Markdown adalah sebuah script untuk memudahkan dokumentasi pada GIT, pertamakali dikenalkan oleh Linus pada tahun ...
+## Tipe Heading
+# Heading 1
+paragraf
+## Heading 2
+paragraf
+### Heading 3
+paragraf
+#### Heading 4
+paragraf
 
-Karena kemudahannya adopsi markdown sangat cepat
+## Tipe Teks
 
-## Struktur Markdown
-Markdown mudah dipahami karena strukturnya mudah dan logis.
-### Header
-untuk membuat Header
+Tebal miring 	***tebal miring***
 
-### Code/Snipet
-Untuk menyisipkan kode gunakan backtick tiga kali.
-```java
+**Tebal** atau __Tebal__
+
+*miring* atau _miring_
+
+~~strikeline~~
+
+## Buat Link
+[link ke arif](https://www.arif.com/) atau
+[link ke arif](https://www.arif.com/ "Pergi ke arif.com")
+
+## Kasih Gambar
+![Gambar teks editor VS Code](https://www.petanikode.com/img/markdown/markdown-vscode.png)
+
+## Buat Cek List
+**Tugas hari ini:**
+
+- [x] Menulis artikel tentang markdown
+- [ ] Belajar Git di Petanikode
+- [ ] Belajar Bahasa pemrograman Rust
+- [x] Membuat template blog dengan bootstrap
+
+## Buat List
+* Milk
+* Bread
+    * Wholegrain
+* Butter
+
+
+1. Tidy the kitchen
+2. Prepare ingredients
+3. Cook delicious things
+- Mengikuti Format atas
+- Mengikuti Format atas
+## Menyisipkan Quote
+> To be or not to be, that is the question.
+
+## Inline code
+melakukan `apt-get` untuk blablabla..
+## Menulis Souce
+```
+java
 public main(){
   java.lang.is.hard();
 
-}
 ```
-untuk menggunakan kode secara inline pada sebuah paragraf dapat menggunakan single backtick seperti `sudo apt-get install atom`
-### Tabel
+## Membuat Tabel
+| Name  | Age | x |
+| ----- | --- | ---- |
+| Bob   | 27  | 24
+| Alice | 23  | 32
+## Membuat garis Horizontal
+ini adalah paragraf
 
-| Judul | Nama | Keterangan|
-|-------|------|-----------|
-|asal|aja|kosong|
+---
+___
 
-### Teks
-
-ini untuk _italic_ ini untuk
+ini paragraf ke dua
